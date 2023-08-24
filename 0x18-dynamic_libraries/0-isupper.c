@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
  * _isupper - writes the character c to stdout
@@ -9,4 +8,5 @@
  */
 int _isupper(int c)
 {
+	return (c >= 'A' && c <= 'Z');
 }
