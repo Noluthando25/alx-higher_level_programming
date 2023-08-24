@@ -5,7 +5,7 @@
  * @src: The character to print
  * @dest: character
  *
- * Return: On success 1.
+ * Return: 0
  */
 char *_strcat(char *dest, char *src)
 {
