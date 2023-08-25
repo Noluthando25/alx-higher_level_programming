@@ -1,13 +1,22 @@
-#include <unistd.h>
-
+#include "main.h"
 /**
- * _memcpy - writes the character c to stdout
- * @src: the charc=racter
- * @dest: The character to print
- * @n: integer
+ *_memcpy - a function that copies memory area
+ *@dest: memory where is stored
+ *@src: memory where is copied
+ *@n: number of bytes
  *
- * Return: On success 1
+ *Return: copied memory with n byted changed
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	int r = 0;
+	int i = n;
+
+
+	for (; r < i; r++)
+	{
+		dest[r] = src[r];
+		n--;
+	}
+	return (dest);
 }

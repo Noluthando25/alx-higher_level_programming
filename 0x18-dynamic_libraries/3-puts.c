@@ -1,12 +1,12 @@
-#include <unistd.h>
-
+#include "main.h"
+void _puts(char *str)
+#include<stdio.h>
 /**
- * _puts - writes the character c to stdout
- * @s: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-void _puts(char *s)
+int main(void)
 {
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

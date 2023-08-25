@@ -1,12 +1,19 @@
-#include <unistd.h>
-
+#include "main.h"
 /**
- * _strchr - writes the character c to stdout
- * @s: The character to print
- * @c: integer
- *
- * Return: On success 1
+ * _strchr - Entry point
+ * @s: input
+ * @c: input
+ * Return: Always 0 (Success)
  */
 char *_strchr(char *s, char c)
 {
+	int i = 0;
+
+
+	for (; s[i] >= '\0'; i++)
+	{
+		if (s[i] == c)
+			return (&s[i]);
+	}
+	return (0);
 }
