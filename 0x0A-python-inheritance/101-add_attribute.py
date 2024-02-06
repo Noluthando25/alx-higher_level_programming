@@ -3,6 +3,7 @@
 
 
 def add_new_attribute(obj, attr_name, attr_value):
+    """Object has an attribute."""
     if hasattr(obj, attr_name):
         raise TypeError("can't add new attribute")
     else:
