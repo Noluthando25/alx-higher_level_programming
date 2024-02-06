@@ -2,6 +2,7 @@
 """Defines a class rectangle that inherits from Basegeometry."""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """Represent a rectangle using Basegeometry."""
     def __init__(self, width, height):
