@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a integer."""
 
+
 def add_integer(a, b=98):
     """Represent a integer."""
 
