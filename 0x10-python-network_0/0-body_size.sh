@@ -1,5 +1,4 @@
 #!/bin/bash
-
-read -p "Enter the URL: " url
+# Get the URL from user input
 response=$(curl -s -o /dev/null -w "%{size_download}" $url)
-echo "Response body size: $response bytes"
+
