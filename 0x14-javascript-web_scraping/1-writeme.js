@@ -2,17 +2,16 @@
 
 const fs = require('fs');
 
-const writeStringToFile = (filePath, content) =>
-{
-    fs.writeFile(filePath, content, 'utf8', (err) =>
-	    {
-		    if (err)
-		    {
-			    console.error(err);
-		    }
-		    else
-		    {
-			    console.log('String successfully written to file.');
-		    }
-	    });
-});
+const writeStringToFile = (filePath, content) => {
+    fs.writeFile(filePath, content, 'utf8', (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('String successfully written to file.');
+        }
+    });
+};
+
+const filePath = 'example.txt';
+const content = 'Hello, world!';
+writeStringToFile(filePath, content);
