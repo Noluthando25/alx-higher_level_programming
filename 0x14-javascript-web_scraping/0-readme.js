@@ -2,18 +2,11 @@
 
 const fs = require('fs');
 
-const filePath = process.argv[2];
+fs.readFile(process.argv[2], 'utf-8', function (error, content) {
 
-if (!filePath) {
-    console.log('Usage: node read_file.js <file_path>');
-    process.exit(1);
-}
-
-fs.readFile(filePath, 'utf-8', (err, data) => {
-    if (err) {
-        console.error('An error occurred while reading the file:');
-        console.error(err);
+    if (error) {
+        console.error('Error occurred while reading the file:' error);
     } else {
-        console.log(data);
+        console.log(content);
     }
 });
