@@ -11,6 +11,3 @@ const displayStatusCode = (url) => {
         }
     });
 };
-
-const url = 'https://jsonplaceholder.typicode.com/posts/1';
-displayStatusCode(url);
